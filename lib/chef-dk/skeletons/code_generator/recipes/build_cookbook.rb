@@ -109,7 +109,7 @@ end
 # * db22790 Add generated cookbook content
 # ```
 #
-if context.have_git && context.delivery_project_git_initialized && !context.skip_git_init
+if context.delivery_project_git_initialized && !context.skip_git_init
 
   generator_desc("Adding delivery configuration to feature branch")
 

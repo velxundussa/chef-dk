@@ -51,17 +51,16 @@ cookbook_file "#{repo_dir}/cookbooks/README.md" do
 end
 
 # git
-if context.have_git
-  if !context.skip_git_init
-    execute("initialize-git") do
-      command("git init .")
-      cwd repo_dir
-      not_if { File.exist?("#{repo_dir}/.gitignore") }
-    end
+if !context.skip_git_init
+  execute("initialize-git") do
+    command("git init .")
+    cwd repo_dir
+    not_if { File.exist?("#{repo_dir}/.gitignore") }
   end
-  template "#{repo_dir}/.gitignore" do
-    source "repo/gitignore.erb"
-    helpers(ChefDK::Generator::TemplateHelper)
-    action :create_if_missing
-  end
+end
+
+template "#{repo_dir}/.gitignore" do
+  source "repo/gitignore.erb"
+  helpers(ChefDK::Generator::TemplateHelper)
+  action :create_if_missing
 end

@@ -69,7 +69,6 @@ module ChefDK
         # Sets git related generator_context values.
         def setup_context
           apply_generator_values_from_config
-          Generator.add_attr_to_context(:have_git, have_git?)
           Generator.add_attr_to_context(:skip_git_init, false)
           config.each do |k,v|
             Generator.add_attr_to_context(k, v)
@@ -78,14 +77,6 @@ module ChefDK
           config[:generator_arg].each do |k,v|
             Generator.add_attr_to_context(k, v)
           end
-        end
-
-        # Checks the `PATH` for the presence of a `git` (or `git.exe`, on
-        # windows) executable.
-        def have_git?
-          path = ENV["PATH"] || ""
-          paths = path.split(File::PATH_SEPARATOR)
-          paths.any? {|bin_path| File.exist?(File.join(bin_path, "git#{RbConfig::CONFIG['EXEEXT']}"))}
         end
 
         private

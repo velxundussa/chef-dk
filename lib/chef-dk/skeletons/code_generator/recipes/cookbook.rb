@@ -98,33 +98,31 @@ template "#{cookbook_dir}/recipes/default.rb" do
 end
 
 # git
-if context.have_git
-  unless context.skip_git_init
+unless context.skip_git_init
 
-    generator_desc("Committing cookbook files to git")
+  generator_desc("Committing cookbook files to git")
 
-    execute("initialize-git") do
-      command("git init .")
-      cwd cookbook_dir
-    end
-
+  execute("initialize-git") do
+    command("git init .")
+    cwd cookbook_dir
   end
 
-  cookbook_file "#{cookbook_dir}/.gitignore" do
-    source "gitignore"
+end
+
+cookbook_file "#{cookbook_dir}/.gitignore" do
+  source "gitignore"
+end
+
+unless context.skip_git_init
+
+  execute("git-add-new-files") do
+    command("git add .")
+    cwd cookbook_dir
   end
 
-  unless context.skip_git_init
-
-    execute("git-add-new-files") do
-      command("git add .")
-      cwd cookbook_dir
-    end
-
-    execute("git-commit-new-files") do
-      command("git commit -m \"Add generated cookbook content\"")
-      cwd cookbook_dir
-    end
+  execute("git-commit-new-files") do
+    command("git commit -m \"Add generated cookbook content\"")
+    cwd cookbook_dir
   end
 end
 
