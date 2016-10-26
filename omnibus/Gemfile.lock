@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/chef/omnibus-software.git
-  revision: 6ed1dfb907a813cd9637d8187c976dad797d5bf2
-  branch: sersut/ff-ksubrama/ruby23
+  revision: d45c0df727c96c208ef187f43d910ff6d7196a98
+  branch: scott-test
   specs:
     omnibus-software (4.0.0)
       chef-sugar (>= 3.4.0)
