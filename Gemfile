@@ -44,7 +44,7 @@ end
 # at least prevent downgrades beyond that:
 group(:omnibus_package) do
   gem "appbundler", github: "chef/appbundler" # until next release with multiple-gem support
-  gem "berkshelf", ">= 5.0"
+  gem "berkshelf", github: "berkshelf/berkshelf", branch: "master"
   # Chef 12.8.1 Gem includes some extra files which can break gem installation on
   # windows. For now we are pulling chef from github at the tag as a workaround.
   gem "chef-provisioning", ">= 2.0"
@@ -56,7 +56,7 @@ group(:omnibus_package) do
   # The chef version is pinned by "rake dependencies", which grabs the current version from omnibus.
   gem "chef", github: "chef/chef", branch: "v12.18.31"
   gem "cheffish", ">= 4.0"
-  gem "chefspec"
+  gem "chefspec", github: "tduffield/chefspec", branch: "standalone-server"
   gem "fauxhai"
   gem "inspec", ">= 0.17.1"
   gem "kitchen-ec2"
