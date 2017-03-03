@@ -96,6 +96,9 @@ group(:omnibus_package) do
   # of different versions across our products
   gem "nokogiri", "~> 1.6.3"
   gem "addressable", "~> 2.4.0"
+
+  # TODO delete
+  gem 'veil', github: 'chef/chef_secrets'
 end
 
 # Everything except AIX and Windows
