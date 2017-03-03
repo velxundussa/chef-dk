@@ -86,6 +86,14 @@ GIT
       mixlib-shellout (~> 2.0)
 
 GIT
+  remote: git://github.com/chef/chef_secrets.git
+  revision: d9695b10fc05d10b6b32d79e82c568f13510888a
+  specs:
+    veil (0.1.0)
+      bcrypt (~> 3.1)
+      pbkdf2
+
+GIT
   remote: git://github.com/chef/opscode-pushy-client.git
   revision: 960147934b353e73f7cb7601fb2ac9143fa93f4d
   branch: 2.1.2
@@ -154,6 +162,8 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     aws-sigv4 (1.0.0)
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     berkshelf (5.6.3)
       addressable (~> 2.3, >= 2.3.4)
       berkshelf-api-client (>= 2.0.2, < 4.0)
@@ -600,6 +610,7 @@ GEM
       ast (~> 2.2)
     parslet (1.5.0)
       blankslate (~> 2.0)
+    pbkdf2 (0.1.0)
     plist (3.2.0)
     polyglot (0.3.5)
     powerpack (0.1.1)
@@ -856,6 +867,7 @@ DEPENDENCIES
   ruby-prof
   ruby-shadow
   test-kitchen
+  veil!
   win32-api
   win32-dir
   win32-event
