@@ -1,6 +1,7 @@
-# WARNING DO NOT REGENERATE ANY MORE WITH version_policy.rb
-override :rubygems, version: "2.6.11"
-override :bundler, version: "1.14.6"
+# THIS IS NOW HAND MANAGED, JUST EDIT THE THING
+# it is still here for convenicence so that .travis.yml and appveyor.yml can consume it
+override :rubygems, version: "2.6.12"
+override :bundler, version: "1.15.0"
 override "libffi", version: "3.2.1"
 override "libiconv", version: "1.14"
 override "liblzma", version: "5.2.3"
