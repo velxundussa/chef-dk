@@ -1,12 +1,16 @@
-PATH
-  remote: ../../omnibus-software
+GIT
+  remote: https://github.com/chef/omnibus-software.git
+  revision: 39d9c16abc649ca52440f9420c6b6f24ff06877b
+  branch: lcg/ruby-bindir
   specs:
     omnibus-software (4.0.0)
       chef-sugar (>= 3.4.0)
       omnibus (>= 5.5.0)
 
-PATH
-  remote: ../../omnibus
+GIT
+  remote: https://github.com/chef/omnibus.git
+  revision: 1da4e6d456c7ad241940b61ee68ccbcb32596d87
+  branch: lcg/improve-appbundling
   specs:
     omnibus (5.5.0)
       aws-sdk (~> 2)
