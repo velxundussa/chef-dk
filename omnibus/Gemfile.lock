@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/omnibus-software.git
-  revision: 711532a283725743d3f82f69974a525709f82eab
+  revision: f5ecaf9522a799a78840c9f0b479832a8573e329
   branch: lcg/ruby-bindir
   specs:
     omnibus-software (4.0.0)
