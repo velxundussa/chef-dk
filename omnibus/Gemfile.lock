@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/omnibus-software.git
-  revision: 249450d39dd23fb116bd73efa219089df3b32ad0
+  revision: 5af47c14df8a86a21aea2861666482db686bb560
   branch: lcg/ruby-bindir
   specs:
     omnibus-software (4.0.0)
@@ -32,13 +32,13 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     artifactory (2.8.1)
     awesome_print (1.7.0)
-    aws-sdk (2.9.28)
-      aws-sdk-resources (= 2.9.28)
-    aws-sdk-core (2.9.28)
+    aws-sdk (2.9.29)
+      aws-sdk-resources (= 2.9.29)
+    aws-sdk-core (2.9.29)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.9.28)
-      aws-sdk-core (= 2.9.28)
+    aws-sdk-resources (2.9.29)
+      aws-sdk-core (= 2.9.29)
     aws-sigv4 (1.0.0)
     berkshelf (6.1.0)
       addressable (~> 2.3, >= 2.3.4)
