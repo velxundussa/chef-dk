@@ -45,7 +45,7 @@ end
 # We should only be using "~>" to work around bugs, or temporarily pinning some tech debt.
 # We equality pin the chef gem itself to assert which version we're shipping.
 group(:omnibus_package) do
-  gem "appbundler"
+#  gem "appbundler"
   gem "berkshelf", ">= 7.0"
   gem "chef-provisioning", ">= 2.7.1", group: :provisioning
   gem "chef-provisioning-aws", ">= 3.0.2", group: :provisioning

@@ -6,6 +6,7 @@
 # software here: bundle exec rake dependencies:update_omnibus_gemfile_lock
 override :rubygems, version: "2.7.6"
 override :bundler, version: "1.16.1"
+override "appbundler", version: "lcg/correctly-install-gemfile-lock"
 override "libffi", version: "3.2.1"
 override "libiconv", version: "1.15"
 override "liblzma", version: "5.2.3"
