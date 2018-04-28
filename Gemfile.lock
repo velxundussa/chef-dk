@@ -59,13 +59,14 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.2)
-    chef (14.0.202)
+    chef (14.0.213)
       addressable
       bundler (>= 1.10)
-      chef-config (= 14.0.202)
+      chef-config (= 14.0.213)
       chef-zero (>= 13.0)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
+      ffi (< 1.9.22)
       ffi-yajl (~> 2.2)
       highline (~> 1.6, >= 1.6.9)
       iniparse (~> 1.4)
@@ -89,14 +90,14 @@ GEM
       specinfra (~> 2.10)
       syslog-logger (~> 1.6)
       uuidtools (~> 2.1.5)
-    chef (14.0.202-universal-mingw32)
+    chef (14.0.213-universal-mingw32)
       addressable
       bundler (>= 1.10)
-      chef-config (= 14.0.202)
+      chef-config (= 14.0.213)
       chef-zero (>= 13.0)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
-      ffi (~> 1.9)
+      ffi (< 1.9.22)
       ffi-yajl (~> 2.2)
       highline (~> 1.6, >= 1.6.9)
       iniparse (~> 1.4)
@@ -133,7 +134,7 @@ GEM
     chef-api (0.8.0)
       logify (~> 0.1)
       mime-types
-    chef-config (14.0.202)
+    chef-config (14.0.213)
       addressable
       fuzzyurl
       mixlib-config (~> 2.0)
@@ -727,7 +728,7 @@ DEPENDENCIES
   artifactory
   berkshelf (>= 7.0)
   bundler
-  chef (= 14.0.202)
+  chef (= 14.0.213)
   chef-dk!
   chef-provisioning (>= 2.7.1)
   chef-provisioning-aws (>= 3.0.2)
