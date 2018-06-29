@@ -30,14 +30,14 @@ GEM
       mixlib-shellout (~> 2.0)
     artifactory (2.8.2)
     ast (2.4.0)
-    aws-sdk (2.11.77)
-      aws-sdk-resources (= 2.11.77)
-    aws-sdk-core (2.11.77)
+    aws-sdk (2.11.78)
+      aws-sdk-resources (= 2.11.78)
+    aws-sdk-core (2.11.78)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.77)
-      aws-sdk-core (= 2.11.77)
-    aws-sigv4 (1.0.2)
+    aws-sdk-resources (2.11.78)
+      aws-sdk-core (= 2.11.78)
+    aws-sigv4 (1.0.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -536,6 +536,7 @@ GEM
     parser (2.5.1.0)
       ast (~> 2.4.0)
     parslet (1.8.2)
+    pkg-config (1.3.1)
     plist (3.4.0)
     polyglot (0.3.5)
     powerpack (0.1.2)
@@ -783,6 +784,7 @@ DEPENDENCIES
   nokogiri
   ohai (>= 14.0.29)
   opscode-pushy-client (>= 2.4.11)
+  pkg-config
   pry
   pry-byebug
   pry-remote

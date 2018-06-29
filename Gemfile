@@ -85,6 +85,7 @@ group(:omnibus_package) do
   # All of the following used to be software definitions we included:
   gem "knife-spork"
   gem "mixlib-install"
+  gem "pkg-config"
   gem "nokogiri"
   gem "pry-byebug"
   gem "pry-remote"
