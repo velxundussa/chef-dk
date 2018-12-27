@@ -47,6 +47,7 @@ describe ChefDK::Command::Verify do
       "chefspec",
       "generated-cookbooks-pass-chefspec",
       "fauxhai",
+      "foodcritic",
       "knife-spork",
       "kitchen-vagrant",
       "package installation",
