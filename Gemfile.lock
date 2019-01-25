@@ -98,6 +98,49 @@ GEM
       specinfra (~> 2.10)
       syslog-logger (~> 1.6)
       uuidtools (~> 2.1.5)
+    chef (14.8.12-universal-mingw32)
+      addressable
+      bundler (>= 1.10)
+      chef-config (= 14.8.12)
+      chef-zero (>= 13.0)
+      diff-lcs (~> 1.2, >= 1.2.4)
+      erubis (~> 2.7)
+      ffi (~> 1.9, >= 1.9.25)
+      ffi-yajl (~> 2.2)
+      highline (~> 1.6, >= 1.6.9)
+      iniparse (~> 1.4)
+      iso8601 (~> 0.12.1)
+      mixlib-archive (~> 0.4)
+      mixlib-authentication (~> 2.1)
+      mixlib-cli (~> 1.7)
+      mixlib-log (~> 2.0, >= 2.0.3)
+      mixlib-shellout (~> 2.4)
+      net-sftp (~> 2.1, >= 2.1.2)
+      net-ssh (~> 4.2)
+      net-ssh-multi (~> 1.2, >= 1.2.1)
+      ohai (~> 14.0)
+      plist (~> 3.2)
+      proxifier (~> 1.0)
+      rspec-core (~> 3.5)
+      rspec-expectations (~> 3.5)
+      rspec-mocks (~> 3.5)
+      rspec_junit_formatter (~> 0.2.0)
+      serverspec (~> 2.7)
+      specinfra (~> 2.10)
+      syslog-logger (~> 1.6)
+      uuidtools (~> 2.1.5)
+      win32-api (~> 1.5.3)
+      win32-certstore (>= 0.1.8)
+      win32-dir (~> 0.5.0)
+      win32-event (~> 0.6.1)
+      win32-eventlog (= 0.6.3)
+      win32-mmap (~> 0.4.1)
+      win32-mutex (~> 0.4.2)
+      win32-process (~> 0.8.2)
+      win32-service (~> 1.0)
+      win32-taskscheduler (~> 2.0)
+      windows-api (~> 0.4.4)
+      wmi-lite (~> 1.0)
     chef-api (0.9.0)
       logify (~> 0.1)
       mime-types
@@ -234,11 +277,15 @@ GEM
     fauxhai (6.10.0)
       net-ssh
     ffi (1.10.0)
+    ffi (1.10.0-x64-mingw32)
+    ffi (1.10.0-x86-mingw32)
     ffi-libarchive (0.4.6)
       ffi (~> 1.0)
     ffi-rzmq (2.0.7)
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
+      ffi
+    ffi-win32-extensions (1.0.3)
       ffi
     ffi-yajl (2.3.1)
       libyajl2 (~> 1.2)
@@ -370,6 +417,7 @@ GEM
       tty-prompt (~> 0.17)
       tty-table (~> 0.10)
     ipaddress (0.8.3)
+    iso8601 (0.12.1)
     jaro_winkler (1.5.2)
     jmespath (1.4.0)
     json (2.1.0)
@@ -457,6 +505,8 @@ GEM
     minitest (5.10.3)
     mixlib-archive (0.4.19)
       mixlib-log
+    mixlib-archive (0.4.19-universal-mingw32)
+      mixlib-log
     mixlib-authentication (2.1.1)
     mixlib-cli (1.7.0)
     mixlib-config (2.2.18)
@@ -467,6 +517,9 @@ GEM
       thor
     mixlib-log (2.0.9)
     mixlib-shellout (2.4.4)
+    mixlib-shellout (2.4.4-universal-mingw32)
+      win32-process (~> 0.8.2)
+      wmi-lite (~> 1.0)
     mixlib-versioning (1.2.7)
     molinillo (0.6.6)
     ms_rest (0.7.3)
@@ -496,6 +549,10 @@ GEM
     net-telnet (0.1.1)
     netaddr (1.5.1)
     nokogiri (1.10.1)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.1-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.1-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     nori (2.6.0)
     notiffany (0.1.1)
@@ -562,6 +619,7 @@ GEM
       nokogiri (~> 1.5)
       trollop (~> 2.1)
     rdoc (6.0.1)
+    rdp-ruby-wmi (0.3.1)
     representable (3.0.4)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -639,6 +697,7 @@ GEM
       unicode-display_width (~> 1.4.0)
       unicode_utils (~> 1.4.0)
     strings-ansi (0.1.0)
+    structured_warnings (0.3.0)
     syslog-logger (1.6.8)
     systemu (2.6.5)
     term-ansicolor (1.7.1)
@@ -707,6 +766,8 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
+    unf_ext (0.0.7.5-x64-mingw32)
+    unf_ext (0.0.7.5-x86-mingw32)
     unicode-display_width (1.4.1)
     unicode_utils (1.4.0)
     uuidtools (2.1.5)
@@ -715,6 +776,35 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
+    win32-api (1.5.3-universal-mingw32)
+    win32-certstore (0.2.2)
+      ffi
+      mixlib-shellout
+    win32-dir (0.5.1)
+      ffi (>= 1.0.0)
+    win32-event (0.6.3)
+      win32-ipc (>= 0.6.0)
+    win32-eventlog (0.6.3)
+      ffi
+    win32-ipc (0.7.0)
+      ffi
+    win32-mmap (0.4.2)
+      ffi
+    win32-mutex (0.4.3)
+      win32-ipc (>= 0.6.0)
+    win32-process (0.8.3)
+      ffi (>= 1.0.0)
+    win32-service (1.0.1)
+      ffi
+      ffi-win32-extensions
+    win32-taskscheduler (2.0.4)
+      ffi
+      structured_warnings
+    windows-api (0.4.4)
+      win32-api (>= 1.4.5)
+    windows-pr (1.2.6)
+      win32-api (>= 1.4.5)
+      windows-api (>= 0.4.0)
     winrm (2.3.1)
       builder (>= 2.1.2)
       erubis (~> 2.7)
@@ -739,6 +829,8 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
+  x86-mingw32
 
 DEPENDENCIES
   appbundler
