@@ -87,8 +87,7 @@ group(:omnibus_package) do
   # Right now we must import chef-apply as a gem into the ChefDK because this is where all the gem
   # dependency resolution occurs. Putting it elsewhere endangers older ChefDK issues of gem version
   # conflicts post-build.
-  gem "chef-apply"
-
+  gem "chef-apply", git: "https://github.com/chef/chef-apply.git", branch: "mp/group-related-classes-together"
   # For Delivery build node
   gem "chef-sugar"
   gem "mixlib-versioning"
